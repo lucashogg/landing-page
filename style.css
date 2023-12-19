@@ -1,4 +1,4 @@
-/* RESET */
+/* || RESET */
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -60,18 +60,33 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/* GOBAL */
+/* || GENERAL STYLES */
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 li {
     list-style: none;
 }
 
-.container {
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 6px 20px;
+}
+
+.mw-l {
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mw-s {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -80,30 +95,133 @@ li {
     justify-content: space-between;
 }
 
-/* HEADER */
+.flex-align-center {
+    align-items: center;
+}
+
+.hero,
+.info,
+.quote,
+.sign-up {
+    padding: 80px 0;
+}
+
+/* BG COLORS */
+.dark-blue {
+    background-color: #1f2937;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.light-gray {
+    background-color: #e5e7eb;
+}
+
+.button-box,
+button {
+    background-color: #3882f6;
+}
+
+/* FONT COLORS */
+.header-logo,
+.hero-container h1,
+.hero-container button,
+.button-box,
+.button-box button,
+footer p {
+    color: #f9faf8;
+}
+
+.navbar a,
+.hero-container p {
+    color: #e5e7eb;
+}
+
+.info-container h2,
+.quote-container p {
+    color: #1f2937;
+}
+
+.item-container p {
+    color: #444d5b;
+}
+
+/* FONT STYLES */
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar li {
+    font-size: 18px;
+}
+
+.hero-container h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.info-container h2 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.quote-container p {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+p.signature {
+    font-weight: 700;
+}
+
+/* || HEADER */
+.header {
+    padding: 10px 0;
+}
 
 .navbar {
     display: flex;
     gap: 20px;
 }
 
-/* MAIN */
+/* || FOOTER */
+.footer p {
+    text-align: center;
+    padding: 25px;
+}
 
-/* HERO */
-.container.hero .flex-between .left {
+/* || MAIN */
+
+/* || HERO */
+.hero-container .flex-between {
+    gap: 50px;
+}
+
+.hero-container .left,
+.hero-container .right {
     flex: 1;
 }
 
-.container.hero .flex-between .right {
-    flex: 1;
+.hero-container p {
+    padding: 15px 0;
 }
 
-/* INFO */
-.container.info {
-    max-width: 1000px;
+.hero-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(106, 113, 130);
 }
 
-.container.info h2 {
+/* || INFO */
+.info h2 {
     text-align: center;
 }
 
@@ -111,30 +229,36 @@ li {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    margin-top: 20px;
 }
 
 .item {
-    flex-basis: 250px;
+    flex-basis: 200px;
 }
 
-/* QUOTE */
-.container.quote {
-    max-width: 1000px;
+.img-box {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882f6;
+    border-radius: 10px;
 }
 
+.item p {
+    margin-top: 15px;
+}
+
+/* || QUOTE */
 .signature {
     text-align: right;
 }
 
-/* SIGN UP */
-.flex-between.button-box {
-    max-width: 1000px;
-    margin: 0 auto;
+/* || SIGN UP */
+.button-box {
     align-items: center;
-    padding: 3em;
+    padding: 50px;
+    border-radius: 10px;
 }
 
-/* FOOTER */
-footer p {
-    text-align: center;
+.button-box button {
+    border: 1px solid #fff;
 }
